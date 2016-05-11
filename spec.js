@@ -3,7 +3,6 @@ var request = require("supertest");
 var appName = process.env.IDS_PROJECT_NAME.split("|").pop().replace(" ", "");
 var url = "http://" + appName + ".mybluemix.net";
 
-console.log("appName: " + process.env.IDS_PROJECT_NAME);
 console.log("Request url: " + url);
 
 request = request(url);
